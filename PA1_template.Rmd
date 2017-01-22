@@ -51,7 +51,7 @@ ds <- with(data_activity, aggregate(steps ~ date, data=data_activity, sum))
 **2. Plot a Histogram of the total number of steps taken each day:**
 
 ```{r}
-hist(ds$steps, main ="HISTOGRAM OF STEPS", xlab ="Steps(in Days)", col = 10, border = 4, density = 50)
+hist(ds$steps, main ="HISTOGRAM OF STEPS", xlab ="Steps(in Days)", col = 2, border = 4 )
 ``` 
 
 
@@ -138,7 +138,7 @@ head(data_activity_wo_na)
 
 ```{r}
 ds <- aggregate(steps ~ date, data=data_activity_wo_na, sum)
-hist(ds$steps, main="HISTOGRAM BY STEPS", xlab="Step (in Minutes)", col = 10, border = 4, density = 50)
+hist(ds$steps, main="HISTOGRAM BY STEPS", xlab="Step (in Minutes)", col = 3, border = 4)
 ```
 
 Calculate and report the mean and median total number of steps taken per day.
@@ -149,7 +149,7 @@ c(mean=mean(ds$steps), median=median(ds$steps))
 **4ii. Do these values differ from the estimates from the first part of the assignment? What is the impact of imputing missing data on the estimates of the total daily number of steps?** 
 
 ```{}
-Yes, the values is differ but it is seem very low and it will not give a big impact on the data analysis.
+YES, the values does differ however, it is very minor, hence therefore, and it does not have any big impact to the analysis.
 ```
 
 ## E. Is There Any Differences In Activity Patterns Between Weekdays and Weekends?
